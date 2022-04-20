@@ -1,6 +1,6 @@
-/* * {
+ /* * {
     border:1px solid fuchsia; 
-}  */
+}    */
 html {
     font-family: 'Raleway', sans-serif;
     background: url(Images/rainbow.jpg) no-repeat center center fixed;  
@@ -15,22 +15,37 @@ body {
     
 }
 
-
 h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    color: black;
+    color: mediumvioletred;
     display: flex;
     margin: .5%;
-
-
+    padding: 1%;
 }
 
 h2 {
-    font-size: 3rem;
-    line-height: 3rem;
-    color: black;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: whitesmoke;
     margin: .5%;
+}
+
+.sub-heading:hover {
+    text-shadow: 
+            0.12em 0.12em whitesmoke;
+    transform: scale(1.2); 
+
+}
+
+.main-heading {
+    text-shadow: 3px 3px whitesmoke;
+    padding-left: 25%;
+}
+
+.sub-heading {
+    padding-left: 25%;
+    color: mediumvioletred;
 }
 
 nav {
@@ -52,7 +67,9 @@ a {
 }
 
 a:hover {
-    color: white
+    color: white;
+    background-color: aquamarine;
+    opacity: 0.8;
 }
 
 img {
@@ -61,10 +78,14 @@ img {
 }
 
 .img-round {
-    width: 100%;
-    max-height: 100%;
+    max-width: 60%;
+    max-height: 60%;
     border-radius: 50%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
 }
+
 
 .bio {
     color: white
@@ -82,10 +103,8 @@ p {
 }
 
 .intro {
-    font-family: 'Fira Code', monospace;
-    font-weight: bold;
-    font-size: 1rem;
-    padding-top: 10%;
+    padding-top: 7%;
+    width: 100%;
 }
 
 button {
@@ -120,74 +139,51 @@ button {
 .but-1:hover, button:hover {
     color: grey;
 }
-
+/* into page... section 1 is the main DIV */
 .section-1 {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    padding-left: 10%;
-    
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.profile-img {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-2 {
+    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
     padding: 10px;
-    
+    margin-left: auto;
+    margin-right: auto;   
 }
 
+.section-aboutme {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
 .section-3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: flex-start;
-    padding: 10px;
-    
-}
-
-
-/* Contact Details Page*/
-
-form {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-top: 8%;
-    padding-bottom: 30px;
-    
+    padding: 10px;   
 }
-
-label {
-    font-weight: bold;
-    color: #5e7992;
-    padding-left: 15px;
-}
-    
-input,textarea {
-    box-sizing: border-box;
-    border: 1px solid grey;
-    margin: 12px;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow:inset 0 0 1.5px 1.5px #888;
-    background: rgb(243, 240, 240);
-    font-size: 1rem;
-    width: 100%; 
-    
-}
-
-.form-item {
-    display:flex;
-    width: 50%;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 #linkedin-logo {
     width: 30px;
     height: 30px;
@@ -209,7 +205,93 @@ input,textarea {
     padding: 5%;
 }
 
-.buffer {
-    padding: 5%;
+
+/* Contact Details Page*/
+
+form {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+label {
+    font-weight: bold;
+    color: #5e7992;
+    padding-left: 15px;
+    width: 15%;
+}
+    
+input,textarea {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow:inset 0 0 1.5px 1.5px whitesmoke;
+    background: rgb(243, 240, 240);
+    font-size: 1rem;
+    width: 100%; 
+}
+
+.form-item {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.section-4{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    padding: 1%;  
+}
+
+.text-1 {
+    font-weight: 800;
+}
+
+.text-2 {
+    font-weight: 400;
+}
+
+/* about me section */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text-3 {
+    font-weight: 600;
+    padding: 5%;
+    margin: none;
+}
+
+/* contact details form  */
+.contactform {
+    background-color: thistle;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
