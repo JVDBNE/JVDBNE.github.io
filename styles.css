@@ -1,7 +1,5 @@
-  /* * {
-    border:1px solid fuchsia; 
-}     */
-html {
+    
+    html {
     font-family: 'Raleway', sans-serif;
     background: url(Images/rainbow.jpg) no-repeat center center fixed; 
     background-position: top;
@@ -73,15 +71,18 @@ img {
 }
 
 .img-round {
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 50%;
     padding: 5%;
     display: flex;
     justify-content: center;
 }
 
-
+#jess {
+    width: 70%;
+    max-height: 70%;
+}
 .bio {
     color: white;
     font-size: 2rem;
@@ -160,7 +161,6 @@ button {
     display: flex;
     flex-direction: row;
     width: auto;
-    /* height: 100vh; */
     margin: 0px auto;  
 }
 .text-1 {
@@ -178,6 +178,13 @@ button {
     flex-direction: row;
     width: auto;
     /* height: 100vh; */
+}
+
+.me {
+    width:48%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 /* this section is the language icons at the bottom */
 .section-3 {     
@@ -215,15 +222,18 @@ button {
 /* Contact Details Page*/
 
 form {
+    background-color: rgba(216, 191, 216, 0.493);
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    width: 100%;
-    padding: 2%;
+    width: 60%;
+    padding: 3%;
     margin-left: auto;
     margin-right: auto;
-    
+    border-radius: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 label {
@@ -251,13 +261,6 @@ input,textarea {
     width: 100%;
     
 }
-.section-4{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    text-align: center;
-    padding: 1%;  
-}
 /* about me section */
 
 .about {
@@ -271,17 +274,22 @@ input,textarea {
 
 .text-3 {
     font-weight: 500;
-    padding: 3%;
+    padding: 5%;
     margin: none;
     text-align: left;
 }
 
-/* contact details form  */
+.jess {
+    display: flex;
+    justify-content: center;
+    padding: 30%;
+}
+
+/* contact details form - main page  */
 .contactform {
     background-color: rgba(216, 191, 216, 0.397);
     display: flex;
     flex-direction: column;
-    
     width: auto;
     padding-top: 10px; 
     padding-bottom: 5%;
@@ -314,12 +322,25 @@ input,textarea {
     direction: ltr;
 }
 
-
+/* This section is on the contact details page */
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    padding: 1%;  
+    margin-top: 4%;
+}
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width:992px) {
-    
+    .section-1,.contactform,.section-2, .row, .section-aboutme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: none;
+    }
     a {
         padding: 15px;
     }
@@ -338,12 +359,41 @@ input,textarea {
         text-shadow: 3px 3px whitesmoke;
         font-size: 2rem;
         justify-content: center ;
+        padding-left: 2%;
     }
-    p {
+    .folio {
+        width: 85%;
+    }
+p {
         text-align: center;
+        font-size: 1.5rem;
     }
+.me {
+        width: 85%;
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+h2 {
+        justify-content: flex-start;
+        padding-top: 3%;
+    }
+div {
+        width: 95%;
+    }
+p.text-3 {
+        margin: none;
+    }
+.button-1 {
+        width: 25%;
+    }
+
+form {
+    width:auto;
+}
+
+}
     
-    }
 
 @media screen and (max-width:600px) {
 
@@ -353,53 +403,57 @@ input,textarea {
     align-items: center;
     padding: none;
 }
-    a {
+a {
         padding: 15px;
     }
-
-    .intro {
-        padding-top: 2%;
-    }
-    
-    .folio {
+.folio {
         width: 85%;
     }
-    .sub-heading {
+.sub-heading {
         padding-left: 2%; 
         padding-right: 2%;
         font-size: 3rem;
         text-align: center;
     }
-    .main-heading {
+.main-heading {
         text-shadow: 3px 3px whitesmoke;
         padding-left: 2%;
         padding-right: 2%;
         font-size: 2rem;
         justify-content: center;
     }
-    p {
+p {
         text-align: center;
         font-size: 1.5rem;
     }
-    .me {
+.me {
         width: 85%;
         padding-top: 3%;
         display: flex;
         justify-content: center;
     }
-    h2 {
+h2 {
         justify-content: flex-start;
         padding-top: 3%;
     }
-    div {
+div {
         width: 95%;
     }
-    p.text-3 {
+p.text-3 {
         margin: none;
     }
-    .button-1 {
+.button-1 {
         width: 25%;
     }
+a {
+    font-size: 1rem;
+    padding: 3px;
+}
+
+form {
+    width:auto;
+}
+
 }
 
 
