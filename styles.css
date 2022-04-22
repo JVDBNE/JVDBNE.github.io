@@ -1,18 +1,18 @@
- /* * {
+  /* * {
     border:1px solid fuchsia; 
-}    */
+}     */
 html {
     font-family: 'Raleway', sans-serif;
-    background: url(Images/rainbow.jpg) no-repeat center center fixed;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(Images/rainbow.jpg) no-repeat center center fixed; 
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%; 
 }
 
 body {
-    margin: 0.5;
-    
+    max-width: 100%;
+    margin: 0;
 }
 
 h1 {
@@ -32,34 +32,29 @@ h2 {
 }
 
 .sub-heading:hover {
-    text-shadow: 
-            0.12em 0.12em whitesmoke;
+    text-shadow: 0.12em 0.12em whitesmoke;
     transform: scale(1.2); 
-
 }
-
 .main-heading {
     text-shadow: 3px 3px whitesmoke;
     padding-left: 25%;
 }
-
 .sub-heading {
     padding-left: 25%;
     color: mediumvioletred;
 }
-
 nav {
-    margin: 10px;
+    margin: 8px;
     padding-top: 10px;
     display:flex;
-    justify-content: flex-end;
-    
+    flex-wrap: wrap;
+    justify-content: flex-end;  
 }
 
 a {
     color: grey;
     text-decoration: none;
-    padding: 5px;
+    padding: 4px;
     font-family: 'Fira Code', monospace;  /* Matrix Looking Font  */
     font-size: 1.5rem;
     font-weight: bold;
@@ -74,6 +69,7 @@ a:hover {
 img {
     width: 100%;
     max-height: 100%;
+    border-radius: 18px;
 }
 
 .img-round {
@@ -87,30 +83,26 @@ img {
 
 
 .bio {
-    color: white
-    font-size 2rem;
+    color: white;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.5rem;
     margin-left: .5%;
 }
 
 p {
-        color: white
-        font-size 2rem;
+        color: black;
+        font-size: 1.5rem;
         font-weight: bold;
         line-height: 1.5rem;
+        text-align: center;
+        line-height: 1em;
 }
-
-.intro {
-    padding-top: 7%;
-    width: 100%;
-}
-
 button {
     background-color: pink;
     border: none;
     color: #fff;
-    width: 30%;
+    width: 80%;
     margin: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -123,16 +115,24 @@ button {
 .button-1 {
     
     display:flex;
+    justify-content: center;
     background-color: pink;
     border-radius: 15px;
-    width: 15%;
-    padding: none;  
+    width: 25%;
+    margin-top: 3%;
 }
 
 .but-1 {
     color: white;
     display: flex;
+    justify-content: center;
     padding: 1%;
+}
+
+.contact-message{
+    display: flex;
+    justify-content:center;
+    width: auto;
 }
 
 .but-1:hover, button:hover {
@@ -142,10 +142,9 @@ button {
 .section-1 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;    
+    height: 100vh;
 }
 
 .profile-img {
@@ -157,42 +156,50 @@ button {
 }
 
 .section-2 {
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.507);
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;   
+    width: auto;
+    /* height: 100vh; */
+    margin: 0px auto;  
+}
+.text-1 {
+    font-weight: 800;
+}
+
+.text-2 {
+    font-weight: 400;
+    text-align: left;
 }
 
 .section-aboutme {
-    background-color: lightpink;
+    background-color: rgba(255, 182, 193, 0.521);
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto; 
-
+    width: auto;
+    /* height: 100vh; */
 }
-.section-3 {
+/* this section is the language icons at the bottom */
+.section-3 {     
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;   
+    width: auto;
+    justify-content: center;  
 }
 #linkedin-logo {
     width: 30px;
     height: 30px;
+    border-radius: 1px;
+    
 }
 
 .icons {
     padding: 8px;
-    height:100px;
-    width:100px;
+    height:60px;
+    width:80px;
     opacity: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .row {
@@ -200,8 +207,8 @@ button {
 }
 
 .folio {
-    width: 25%;
-    padding: 5%;
+    width: 30%;
+    padding: 3%;
 }
 
 
@@ -251,15 +258,6 @@ input,textarea {
     text-align: center;
     padding: 1%;  
 }
-
-.text-1 {
-    font-weight: 800;
-}
-
-.text-2 {
-    font-weight: 400;
-}
-
 /* about me section */
 
 .about {
@@ -272,21 +270,21 @@ input,textarea {
 }
 
 .text-3 {
-    font-weight: 600;
-    padding: 5%;
+    font-weight: 500;
+    padding: 3%;
     margin: none;
+    text-align: left;
 }
 
 /* contact details form  */
 .contactform {
-    background-color: thistle;
+    background-color: rgba(216, 191, 216, 0.397);
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: auto;
-    margin-bottom: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    flex-direction: column;
+    
+    width: auto;
+    padding-top: 10px; 
+    padding-bottom: 5%;
 }
 
 .footer {
@@ -306,7 +304,7 @@ input,textarea {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -322,22 +320,6 @@ input,textarea {
 
 @media screen and (max-width:992px) {
     
-    * { border: 1px solid orange; 
-    }
-    
-    }
-
-@media screen and (max-width:600px) {
-
-    * { border: 1px solid fuchsia; 
-}
-
-.section-1,.contactform,.section-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: none;
-}
     a {
         padding: 15px;
     }
@@ -354,15 +336,70 @@ input,textarea {
     }
     .main-heading {
         text-shadow: 3px 3px whitesmoke;
-        padding-left: 2%;
-        padding-right: 2%;
         font-size: 2rem;
         justify-content: center ;
     }
-    p{
+    p {
         text-align: center;
     }
- 
+    
+    }
+
+@media screen and (max-width:600px) {
+
+.section-1,.contactform,.section-2, .row, .section-aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: none;
+}
+    a {
+        padding: 15px;
+    }
+
+    .intro {
+        padding-top: 2%;
+    }
+    
+    .folio {
+        width: 85%;
+    }
+    .sub-heading {
+        padding-left: 2%; 
+        padding-right: 2%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .main-heading {
+        text-shadow: 3px 3px whitesmoke;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 2rem;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .me {
+        width: 85%;
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+    h2 {
+        justify-content: flex-start;
+        padding-top: 3%;
+    }
+    div {
+        width: 95%;
+    }
+    p.text-3 {
+        margin: none;
+    }
+    .button-1 {
+        width: 25%;
+    }
 }
 
 
