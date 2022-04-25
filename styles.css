@@ -103,7 +103,7 @@ button {
     background-color: pink;
     border: none;
     color: #fff;
-    width: 80%;
+    width: 60%;
     margin: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -388,12 +388,15 @@ p.text-3 {
         width: 25%;
     }
 
+button {
+    width: 80%;
+}
+
 form {
     width:auto;
 }
 
 }
-    
 
 @media screen and (max-width:600px) {
 
@@ -437,7 +440,7 @@ h2 {
         padding-top: 3%;
     }
 div {
-        width: 95%;
+        width: 100%;
     }
 p.text-3 {
         margin: none;
@@ -452,6 +455,9 @@ a {
 
 form {
     width:auto;
+}
+button {
+    width: 80%;
 }
 
 }
