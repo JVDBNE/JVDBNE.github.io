@@ -158,11 +158,13 @@ button {
 }
 
 .section-2 {
-    background-color: rgba(127, 255, 212, 0.507);
+    background-color: rgba(224, 173, 243, 0.507);
     display: flex;
     flex-direction: row;
     width: auto;
-    margin: 0px auto;  
+    margin: 0px auto;
+    height: 100vh;  
+
 }
 .text-1 {
     font-weight: 800;
@@ -178,7 +180,7 @@ button {
     display: flex;
     flex-direction: row;
     width: auto;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .me {
@@ -192,7 +194,7 @@ button {
     display: flex;
     flex-direction: row;
     width: auto;
-    justify-content: center;  
+    justify-content: center;
 }
 #linkedin-logo {
     width: 30px;
