@@ -184,10 +184,9 @@ button {
 }
 
 .me {
-    width:48%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 /* this section is the language icons at the bottom */
 .section-3 {     
